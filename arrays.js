@@ -5,13 +5,24 @@ function addElementToBeginningOfArray(array, element) {
 }
 
 function destructivelyAddElementToBeginningOfArray(array, element) {
-   array.push(element);
-   return array;
+  array.unshift(element);
+  return array;
 }
+
+function addElementToEndOfArray(array, element) {
+  return [...array, element];
+}
+
+function destructivelyAddElementToEndOfArray() {
+ array.push(element)
+  return array;
+}
+
 
 function accessElementInArray(array, index) {
   return array[index];
 }
+
 
 function destructivelyRemoveElementFromBeginningOfArray(array) {
   array.shift()
